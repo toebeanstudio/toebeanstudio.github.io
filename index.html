@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toe Bean Studio: tiny cute apps for cat people</title>
+<meta name="description" content="Toe Bean Studio is a tiny independent studio making cute, thoughtful apps. Our first app is Mochi, a little cat who lives on your Mac.">
+<meta name="theme-color" content="#FFF4F6">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Toe Bean Studio">
+<meta property="og:description" content="Tiny cute apps for cat people. Meet Mochi, a little cat who lives on your Mac.">
+<meta property="og:image" content="https://toebeanstudio.github.io/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFF4F6;--paper2:#FFE6EC;--ink:#6B3A4A;--ink2:#8A5466;--accent:#FF8FAB;--on:#633444;--card:#fff}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:radial-gradient(1200px 600px at 80% -10%,#FFE0E7 0,transparent 60%),radial-gradient(900px 500px at -10% 110%,#EEE9FF 0,transparent 60%),var(--paper);color:var(--ink);font:500 17px/1.6 Nunito,ui-rounded,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit}
+.wrap{width:min(1040px,100% - 32px);margin:0 auto}
+header{padding:28px 0;display:flex;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.bean{width:34px;height:34px}
+.logo b{font:400 26px/1 "Bagel Fat One",system-ui}
+main{flex:1}
+.hero{padding:40px 0 24px;max-width:640px}
+h1{font:400 clamp(40px,7vw,68px)/1.02 "Bagel Fat One",system-ui;margin:0 0 16px;letter-spacing:-.01em}
+.lede{font-size:clamp(18px,2.2vw,21px);color:var(--ink2);margin:0}
+.app{margin:36px 0 64px;background:var(--card);border-radius:30px 34px 28px 32px;padding:28px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;box-shadow:0 1px 0 #fff inset,0 24px 50px -28px #ff8fab88,0 3px 10px -4px #ff8fab44}
+.app img{width:112px;height:112px;border-radius:26px}
+.app h2{font:400 34px/1.1 "Bagel Fat One",system-ui;margin:0 0 6px}
+.app p{margin:0 0 14px;color:var(--ink2);max-width:58ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:800;text-decoration:none;background:var(--accent);color:var(--on);box-shadow:0 10px 22px -12px #ff8fab}
+.btn.ghost{background:#fff;color:var(--ink);box-shadow:0 0 0 1.5px #f3c6d2 inset}
+.btn:focus-visible{outline:3px solid #6B3A4A;outline-offset:3px}
+.meta{font-size:14px;color:var(--ink2);margin-top:12px}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:56px}
+.about div{background:#ffffffaa;border-radius:22px;padding:18px 20px}
+.about h3{margin:0 0 4px;font-size:17px}
+.about p{margin:0;color:var(--ink2);font-size:15.5px}
+footer{padding:28px 0 36px;font-size:14.5px;color:var(--ink2)}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:8px}
+footer a{font-weight:700;text-decoration:none}footer a:hover{text-decoration:underline}
+@media (max-width:620px){.app{grid-template-columns:1fr}.app img{width:88px;height:88px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="./" aria-label="Toe Bean Studio home">
+    <svg class="bean" viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="31" rx="11" ry="9" fill="#FF8FAB" stroke="#6B3A4A" stroke-width="2.4"/><ellipse cx="11.5" cy="19" rx="4.6" ry="5.6" fill="#FF8FAB" stroke="#6B3A4A" stroke-width="2.4"/><ellipse cx="20" cy="12" rx="4.6" ry="5.6" fill="#FF8FAB" stroke="#6B3A4A" stroke-width="2.4"/><ellipse cx="28.5" cy="12" rx="4.6" ry="5.6" fill="#FF8FAB" stroke="#6B3A4A" stroke-width="2.4"/><ellipse cx="37" cy="19" rx="4.6" ry="5.6" fill="#FF8FAB" stroke="#6B3A4A" stroke-width="2.4"/></svg>
+    <b>Toe Bean Studio</b>
+  </a>
+</header>
+<main>
+  <section class="hero">
+    <h1>Tiny cute apps for cat people.</h1>
+    <p class="lede">We're a tiny independent studio making soft, thoughtful software that keeps you company while you work.</p>
+  </section>
+  <section class="app" aria-labelledby="mochi">
+    <img src="mochi-icon.png" alt="Mochi app icon">
+    <div>
+      <h2 id="mochi">Mochi</h2>
+      <p>A little cat who lives on your Mac. She walks along your windows, naps in the corner, reminds you to drink water and take breaks, and closes Instagram when your time is up. Mochi is free to download. Mochi Pro is a one-time purchase that adds her AI brain, focus and wellbeing tools, and her whole wardrobe.</p>
+      <div class="btns">
+        <a class="btn" href="https://mochi.toebeanstudio.app/">Meet Mochi</a>
+        <a class="btn ghost" href="https://mochi.toebeanstudio.app/#pricing">Pricing</a>
+      </div>
+      <p class="meta">macOS 13+, Apple silicon &amp; Intel · Free, Pro $14.99 one-time (launch price $9.99)</p>
+    </div>
+  </section>
+  <section class="about" aria-label="About the studio">
+    <div><h3>Made with care</h3><p>Every app is designed and built by us, with no ads and no tracking inside the apps.</p></div>
+    <div><h3>Your data stays yours</h3><p>Mochi keeps what she knows on your Mac. Read our <a href="https://mochi.toebeanstudio.app/privacy.html">privacy policy</a>.</p></div>
+    <div><h3>Talk to a real person</h3><p>Questions or kind words? Email <a href="mailto:hello@toebeanstudio.app">hello@toebeanstudio.app</a>.</p></div>
+  </section>
+</main>
+<footer>
+  <nav aria-label="Legal">
+    <a href="https://mochi.toebeanstudio.app/terms.html">Terms of service</a>
+    <a href="https://mochi.toebeanstudio.app/privacy.html">Privacy policy</a>
+    <a href="https://mochi.toebeanstudio.app/refunds.html">Refund policy</a>
+    <a href="mailto:hello@toebeanstudio.app">Contact</a>
+  </nav>
+  <p>© 2026 Toe Bean Studio. Purchases are processed by Paddle, our merchant of record.</p>
+</footer>
+</div>
+</body>
+</html>
